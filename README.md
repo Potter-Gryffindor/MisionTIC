@@ -1,2 +1,2 @@
 # MisionTic
-Repositorio de actividades MisiónTIC 2022 (ruta 2)
+Repositorio de actividades MisiónTIC 2022 (Ruta 2)
