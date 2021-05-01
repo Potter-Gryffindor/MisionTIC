@@ -4,8 +4,9 @@ Universidad del Norte\
 Ingeniería Eléctrica
 
 # Observasiones
-Recuerde utilizar los recursos de este repositorio unicamente como material de apoyo, \
-es indispensable para su propio aprendizaje, intentar realizar los trabajos propuestos\
+Recuerde utilizar los recursos de este repositorio unicamente como material de apoyo.
+
+Es indispensable para su propio aprendizaje, intentar realizar los trabajos propuestos\
 por si mismo.
 
 Los trabajos entregables se subirán a este repositorio después de que sean calificados\
