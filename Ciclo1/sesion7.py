@@ -47,13 +47,11 @@ def actividad3():
     num = 0
     n = 0
     suma = 0
-    while True:
+    while num!=-1:
         num = float(input('Ingrese un número: '))
-        if num==-1:
-            break
-        else:
+        if num!=-1:
             suma += num
-            n += 1 
+            n += 1
     prom = suma/n if n!=0 else 0
     print(prom) 
     
