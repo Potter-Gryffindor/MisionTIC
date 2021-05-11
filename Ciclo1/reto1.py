@@ -5,7 +5,7 @@ Nombre del reto: Detección Temprana de Enfermedades no Transmisible de un
 Paciente
 Autor: Javier Bayter
 
-Enunciado: 
+Descripción del reto:
 En el año 2015, los líderes mundiales adoptaron un conjunto de objetivos globales para
 erradicar la pobreza, proteger el planeta y asegurar la prosperidad para todos como
 parte de una nueva agenda de desarrollo sostenible. Uno de estos objetivos es el de
@@ -29,6 +29,8 @@ Tabla de Rangos:
  posprandial       [0.78 - 1.1)            elevado
  posprandial         >=1.1                diabetes
 
+Además, para cualquier valor distinto de “ayunas” y “posprandial” en ayunas mostrar el
+mensaje “error en los datos”.
 '''
 
 #Entradas
