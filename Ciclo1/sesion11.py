@@ -74,7 +74,7 @@ def mayor(numeros):
     print(f'Mayor: {numMayor}')
     
 def primos(numeros):
-    listaPrimos = [numero for numero in numeros if 0 not in [numero%i for i in range(2,numero-1)] or numero==1]
+    listaPrimos = [numero for numero in numeros if 0 not in [numero%i for i in range(2,numero)] or numero==1]
     print(f'Primos: {listaPrimos}')
 
 def actividad2():
@@ -84,4 +84,4 @@ def actividad2():
     mayor(lista)
     primos(lista)
           
-#actividad2()
+actividad2()
