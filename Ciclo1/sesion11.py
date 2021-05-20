@@ -84,4 +84,4 @@ def actividad2():
     mayor(lista)
     primos(lista)
           
-actividad2()
+#actividad2()
