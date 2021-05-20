@@ -79,9 +79,9 @@ def primos(numeros):
 
 def actividad2():
     import random
-    lista = [random.randint(1,20) for _ in range(6)]
-    print(f'Lista: {lista}')
-    mayor(lista)
-    primos(lista)
+    numeros = [random.randint(1,20) for _ in range(6)]
+    print(f'Lista: {numeros}')
+    mayor(numeros)
+    primos(numeros)
           
 #actividad2()
