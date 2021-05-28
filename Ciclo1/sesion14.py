@@ -38,12 +38,12 @@ def actividad2():
     columna1 = ''
     for i in range(3):
         for j in range(3):
-            if i==1:
+            if i==0:
                 fila1 = fila1 + ' ' + str(matriz[i][j])
-            if j==1:
+            if j==0:
                 columna1 = columna1 + ' ' + str(matriz[i][j])
-    print(f'Fila 1: [{fila1.lstrip()}]')    
-    print(f'Columna 1: [{columna1.lstrip()}]')
+    print(f'Primera Fila: [{fila1.lstrip()}]')    
+    print(f'Primera Columna: [{columna1.lstrip()}]')
     print(f'Elemento[1][1] = {matriz[1][1]}') 
 
 #actividad2()
