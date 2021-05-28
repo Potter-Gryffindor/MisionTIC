@@ -27,7 +27,7 @@ def ejemplo2():
 #ejemplo2()
 
 #Actividad 1
-#
+
 #Vamos a escribir una funcion que llene una matriz de 5 filas y 10 columnas con números enteros entre 1 y 100
 #aleatorios, imprima los valores máximo y mínimo y sus posiciones dentro de la matriz.
 def actividad1():
@@ -36,14 +36,14 @@ def actividad1():
     maximo, posMax = matriz[0][0], [0,0]
     minimo, posMin  = matriz[0][0], [0,0]
     print('Matriz:')
-    for i in range(len(matriz)):
-        for j in range(len(matriz[i])):
-            if matriz[i][j]>=maximo:
-                maximo, posMax = matriz[i][j], [i,j]
-            if matriz[i][j]<=minimo:
-                minimo, posMin = matriz[i][j], [i,j]    
-            print(matriz[i][j], end=' ')
-        print('')
+    count = 0
+    for i in matriz:
+        print(i)
+        if max(i) > maximo:
+            maximo, posMax = max(i), [count,i.index(max(i))]
+        if min(i) < minimo:
+            minimo, posMin = min(i), [count,i.index(min(i))]
+        count += 1 
     print(f'Máximo{posMax}: {maximo}')
     print(f'Minimo{posMin}: {minimo}')    
          
