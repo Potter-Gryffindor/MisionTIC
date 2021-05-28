@@ -10,19 +10,17 @@ Como vimos en la sesión anterior, las operaciones de este tipo de matrices se p
 #Escribe una función actividad1(x) que imprima la diagonal principal de una matriz x. 
 #Asegúrate de validar si la matriz es cuadrada, sino devuelve un mensaje, "La matriz no es cuadrada"
 def actividad1(matriz):
-    diagonal = ''
     switch = True
     for i in range(len(matriz)):
-        if len(matriz)==len(matriz[i]):
-            diagonal = diagonal + ' ' + str(matriz[i][i])
-        else:
+        if len(matriz)!=len(matriz[i]):
             switch = False
     if switch:
-        print(f'Diagonal: [{diagonal.lstrip()}]')
+        diagonal = [matriz[i][i] for i in range(len(matriz))] 
+        print(f'Diagonal: {diagonal}')
     else:
         print('La matriz no es cuadrada')      
 
-#actividad1([[1,1],[2,7,2],[3,3,3]])
+#actividad1([[1,1,1],[2,7,2],[3,3,3]])
 
 
 #Actividad 2
@@ -34,16 +32,10 @@ def actividad1(matriz):
 #Los valores son ingresados por filas [0][1], [0][2], [0][3], [1][0], etc
 def actividad2():
     matriz = [[float(input(f'Elemento[{i}][{j}]: ')) for j in range(3)] for i in range(3)]
-    fila1 = ''
-    columna1 = ''
-    for i in range(3):
-        for j in range(3):
-            if i==0:
-                fila1 = fila1 + ' ' + str(matriz[i][j])
-            if j==0:
-                columna1 = columna1 + ' ' + str(matriz[i][j])
-    print(f'Primera Fila: [{fila1.lstrip()}]')    
-    print(f'Primera Columna: [{columna1.lstrip()}]')
+    fila0 = matriz[0]
+    columna0 = [fila[0] for fila in matriz]
+    print(f'Primera Fila: {fila0}')    
+    print(f'Primera Columna: {columna0}')
     print(f'Elemento[1][1] = {matriz[1][1]}') 
 
 #actividad2()
