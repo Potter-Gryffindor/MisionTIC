@@ -1,14 +1,41 @@
-## Getting Started
+## Sesión # 2: Componente Práctico
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Una determinada empresa tiene tres listas de tamaño N, las cuales corresponden a:
+1. El código del producto
+2. La cantidad en bodega del producto.
+3. La cantidad mínima requerida del producto.
 
-## Folder Structure
+Para el sistema de inventario es importante conocer si es necesario solicitar un determinado
+producto a su proveedor de acuerdo a la cantidad mínima requerida. Se requiere un algoritmo
+que:
+- Lea el número de productos.
+- Lea las 3 listas y almacene cada lista en un vector.
 
-The workspace contains two folders by default, where:
+Una vez leídos los datos:
+- Indique los códigos de los productos de los cuales se deben realizar los pedidos.
+- Indique el código del producto con mayor y menor número de unidades en bodega.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+**Ejemplos:**
 
-## Dependency Management
+Tamaño de las listas: 7
 
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+Lista de códigos
+| 354 | 256 | 127 | 390 | 35 | 562 | 236 |
+|-----|-----|-----|-----|----|-----|-----|
+
+Lista de cantidad en bodega
+| 10  | 150 | 56  | 24  | 36 | 90  | 15  |
+|-----|-----|-----|-----|----|-----|-----|
+
+Lista de cantidad mínima requerida
+| 17  | 34  | 60  | 56  | 32 | 16  | 5   |
+|-----|-----|-----|-----|----|-----|-----|
+
+``` 
+Códigos de productos que son necesario pedir:
+354
+127
+390
+Código con mayor número unidades: 256
+Código con menor número unidades: 354
+```
