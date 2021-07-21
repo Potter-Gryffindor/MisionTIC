@@ -99,7 +99,8 @@ Como parte de un sistema de facturación es necesario conocer el valor unitario 
 Se requiere un algoritmo que para 1 cliente, calcule el valor a pagar de N tipos de productos
 comprados de acuerdo a la cantidad a llevar de cada tipo.
 
-**Ejemplo:**\
+**Ejemplo:**
+
 Cantidad de tipo de productos: 3\
 Cantidad del producto 1: 4. Valor del producto 1: 2450\
 Cantidad del producto 2: 10. Valor del producto 2: 6540\
